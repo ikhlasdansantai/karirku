@@ -13,5 +13,6 @@ import contact from "/public/icons/contact.svg";
 import meeting from "/public/icons/meeting.svg";
 import searchList from "/public/icons/search-list.svg";
 import pending from "/public/icons/pending.svg";
+import google from "/public/icons/google-logo.svg";
 
-export default { pen, chartBar, code, database, megaphone, firstaid, monitor, music, pencil, userPlus, userVerified, contact, meeting, searchList, pending };
+export default { pen, chartBar, code, database, megaphone, firstaid, monitor, music, pencil, userPlus, userVerified, contact, meeting, searchList, pending, google };
