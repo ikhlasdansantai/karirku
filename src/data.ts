@@ -1,11 +1,5 @@
 import Icons from "@/constant/Icons";
-import React from "react";
-
-type JobCategoriesProps = {
-  title: string;
-  openPositions: number;
-  icon: () => React.ReactNode;
-};
+import { JobCategoriesProps } from "./types";
 
 export const jobCategories: JobCategoriesProps[] = [
   {
@@ -93,5 +87,40 @@ export const candidateFlows = [
     title: "Tunggu Informasi Lebih Lanjut",
     description: "Lamaranmu sedang direview, biasanya perusahaan akan memberikan informasinya dalam 1-2 minggu.",
     icon: Icons.pending,
+  },
+];
+
+export const loker = [
+  {
+    id: 1,
+    title: "Software Developer",
+    company: "Google",
+    companyLogo: Icons.google,
+    level: "Junior",
+    type: "Fulltime",
+    remoteJob: true,
+    skills: ["JavaScript", "React", "Node.js", "Git", "Github"],
+    location: "Jakarta, Indonesia",
+    details: {
+      description: "Developing and maintaining web applications using JavaScript and related technologies.",
+      salaryRange: [6_000_000, 8_000_000],
+      educationMinimum: "Bachelor's Degree in Computer Science or related field",
+      experienceYears: 2,
+      jobRequirements: ["Strong problem-solving skills", "Strong communication skills"],
+      jobDescriptions: [
+        "Developing and maintaining web applications using JavaScript and related technologies.",
+        "Collaborating with cross-functional teams to deliver high-quality software solutions.",
+        "Participating in code reviews and providing feedback to improve the overall quality of the code.",
+      ],
+    },
+    benefits: {
+      healthInsurance: true,
+      paidVacation: 20,
+      retirementPlan: true,
+    },
+    jobPosted: "2024-10-10T10:10:10.000Z",
+    applicationDeadline: "2024-12-31T23:59:59.000Z",
+    contactEmail: "jobs@google.com",
+    companyWebsite: "https://careers.google.com",
   },
 ];
